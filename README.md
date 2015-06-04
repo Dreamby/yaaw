@@ -1,31 +1,31 @@
-YAAW
+YAAW-CN
 ====
+Dreamy 汉化的 YAAW
 
-Yet Another Aria2 Web Frontend in pure HTML/CSS/Javascirpt.
+YAAW - Yet Another Aria2 Web Frontend，又一个使用纯 HTML/CSS/Javascirpt 制作的 Aria2 网页前台。
 
-No HTTP server, backend or server-side program. All you need is just a browser.
+无 HTTP 服务器、后台或者服务器端程序。所需的一切就是一个浏览器。
 
-<br />
-
-Usage
+用法
 -----
-1. Run aria2 with RPC enabled
+1. 以启用 RPC 的模式运行 aria2，命令如下：
 > aria2c --enable-rpc --rpc-listen-all=true --rpc-allow-origin-all
->
-> Warning: This options will not verify the identity of caller. KEEP THE ADDRESS SECRET.
 
-2. Visit **index.html**.
+ ***** 警告: 这个选项不会验证调用者的身份。所以地址要保密。 *****
 
-3. Change "JSON-RPC Path" setting if "Internal server error" occurred.
+2. 访问 **index.html**.
 
-Tips
-----
-* All your settings on web is temporary. **Settings will be lost after aria2 restarted.**
-* Tasks(including which is not finished) will be lost after aria2 restarted. Using `--save-session=SOME/WHERE` and reload with `--continue=true --input-file=SOME/WHERE` to continue.
-* Using `$HOME/.aria2/aria2.conf` to save your options.
-* For more infomations about aria2, visit [Aria2 Manual](http://aria2.sourceforge.net/manual/en/html/)
+3. 如果发生 "Internal server error" 错误，更改 "JSON-RPC 路径"设置。
 
-Components
+
+技巧提示
+-----
+* 在网络上所有你的设置都是临时的。 **在 aria2 重启后，设置将会丢失。**
+* 任务(包括还未完成的部分)在 aria2 重启后将会丢失。使用 `--save-session=SOME/WHERE` 并使用 `--continue=true --input-file=SOME/WHERE` 重载可以继续。
+* 使用 `$HOME/.aria2/aria2.conf` 保存你的选项。
+* 要获得更多关于 aria2 的信息，访问[Aria2 手册](http://aria2.sourceforge.net/manual/en/html/)
+
+组件
 ----------
 + [Bootstrap](http://twitter.github.com/bootstrap/)
 + [mustache.js](https://github.com/janl/mustache.js)
@@ -33,9 +33,9 @@ Components
 + [jQuery Storage](http://archive.plugins.jquery.com/project/html5Storage)
 + [JSON RPC 2.0 jQuery Plugin](https://github.com/datagraph/jquery-jsonrpc)
 
-License
+许可
 -------
-yaaw is licensed under GNU Lesser General Public License.
-You may get a copy of the GNU Lesser General Public License from http://www.gnu.org/licenses/lgpl.txt
+yaaw 是以 GNU Lesser General Public License 许可授权的。
+你可以获取 GNU Lesser General Public License 自 http://www.gnu.org/licenses/lgpl.txt
 
 favicon.ico by [fangke](http://fangke.im/)
