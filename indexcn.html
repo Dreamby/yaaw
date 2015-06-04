@@ -36,6 +36,7 @@
     <div class="container">
       <header class="main-head page-header">
         <h1>YAAW 前台</h1>
+		<span class="yaaw-help"><a href="usage.html">帮助</a></span>
         <span id="offline-cached"></span>
         <div id="global-info" class="pull-right">
           <div id="global-version"></div>
@@ -185,6 +186,7 @@
     <div class="modal-header">
       <button class="close" data-dismiss="modal">×</button>
       <h2>设置</h2>
+      <span class="aria-help"><a href="doc/aria2.rst">帮助</a></span>
     </div>
     <div class="modal-body">
       <form id="setting-form" class="form-horizontal">
@@ -234,7 +236,7 @@
       </div>
     </div>
     <div class="modal-footer">
-      <div id="copyright">© 版权 <a href="https://github.com/binux/yaaw">Binux</a></div>
+      <div id="copyright">© 版权 <a href="https://github.com/binux/yaaw">Binux</a> 汉化 <a href="https://github.com/dreamby/yaaw">Dreamby</a></div>
       <a href="#" id="saveSettings"  class="btn btn-success">保存</a>
       <a href="#" class="btn" data-dismiss="modal">取消</a>
     </div>
@@ -257,8 +259,8 @@
           <div class="task-info">
             <span class="task-status" rel="tooltip" title="{{status}} {{#_v.error_msg}}{{errorCode}}{{/_v.error_msg}}"><i class="{{#_v.status_icon}}{{status}}{{/_v.status_icon}}"></i></span>
             <span>{{#_v.format_size}}{{completedLength}}{{/_v.format_size}} / {{#_v.format_size}}{{totalLength}}{{/_v.format_size}}</span>
-            {{#uploadLength}}<span>(uploaded {{#_v.format_size}}{{uploadLength}}{{/_v.format_size}})</span>{{/uploadLength}}
-            {{#eta}}<span>ETA: {{#_v.format_time}}{{eta}}{{/_v.format_time}}</span>{{/eta}}
+            {{#uploadLength}}<span>(已上传 {{#_v.format_size}}{{uploadLength}}{{/_v.format_size}})</span>{{/uploadLength}}
+            {{#eta}}<span>剩余时间: {{#_v.format_time}}{{eta}}{{/_v.format_time}}</span>{{/eta}}
           </div>
         </div>
         <div class="right-area">
@@ -277,7 +279,7 @@
       {{^tasks}}
       <li>
         <div class="empty-tasks">
-          <strong>No Active Tasks</strong>
+          <strong>无活动任务</strong>
         </div>
       </li>
       {{/tasks}}
@@ -502,8 +504,8 @@
     <script src="js/jquery.base64.min.js"></script>
     <script src="js/mustache.js"></script>
     <script src="js/peerid.js"></script>
-    <script src="js/aria2.js"></script>
-    <script src="js/yaaw.js"></script>
+    <script src="js/aria2cn.js"></script>
+    <script src="js/yaawcn.js"></script>
   </body>
 </html>
 <!-- vim: set et sw=2 ts=2 sts=2 ff=unix fenc=utf8: -->
